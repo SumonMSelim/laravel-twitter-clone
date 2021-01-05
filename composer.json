@@ -16,8 +16,11 @@
         "laravel/tinker": "^2.5"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.5",
+        "barryvdh/laravel-ide-helper": "^2.9",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
+        "matt-allan/laravel-code-style": "^0.6.0",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",
         "phpunit/phpunit": "^9.3.3"
@@ -56,6 +59,8 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
-        ]
+        ],
+        "ide-generate": "php artisan ide-helper:generate && php artisan ide-helper:models && php artisan ide-helper:meta",
+        "fix-styles": "php-cs-fixer fix"
     }
 }
