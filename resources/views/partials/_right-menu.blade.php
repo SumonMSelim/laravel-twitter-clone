@@ -2,7 +2,6 @@
     <div class="sticky top-0">
         <div class="h-screen overflow-y-scroll">
             <!--right menu-->
-
             <div class="flex justify-center">
                 <div class="p-5 pb-0 relative w-full">
                     <button type="submit" class="absolute ml-4 mr-4 mt-3">
@@ -33,195 +32,6 @@
                     />
                 </div>
             </div>
-
-            <!--second-trending tweet section-->
-            <div
-                class="bg-gray-100 focus:border-black m-4 overflow-hidden rounded-lg shadow-lg"
-            >
-                <div class="flex">
-                    <div class="">
-                        <h2
-                            class="font-semibold px-4 py-2 text-gray-900 text-xl w-48"
-                        >
-                            Germany trends
-                        </h2>
-                    </div>
-                    <div class="flex-1 px-4 py-2 m-2">
-                        <a
-                            href=""
-                            class="float-right hover:bg-blue-300 hover:bg-opacity-20 hover:text-blue-500 rounded-full text-2xl text-gray-900"
-                        >
-                            <svg
-                                class="m-2 h-6 w-6"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path
-                                    d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                                ></path>
-                                <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <hr class=""/>
-
-                <!--first trending tweet-->
-                <div class="flex">
-                    <div class="flex-1">
-                        <p class="px-4 ml-2 mt-3 w-48 text-xs text-gray-400">
-                            1 . Trending
-                        </p>
-                        <h2 class="font-bold ml-2 px-4 text-gray-900 w-48">
-                            #Microsoft363
-                        </h2>
-                        <p class="px-4 ml-2 mb-3 w-48 text-xs text-gray-400">
-                            5,466 Tweets
-                        </p>
-                    </div>
-                    <div class="flex-1 px-4 py-2 m-2">
-                        <a
-                            href=""
-                            class="float-right hover:bg-blue-100 hover:text-blue-400 rounded-full text-2xl text-gray-400"
-                        >
-                            <svg
-                                class="m-2 h-5 w-5"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <hr class=""/>
-
-                <!--second trending tweet-->
-
-                <div class="flex">
-                    <div class="flex-1">
-                        <p class="px-4 ml-2 mt-3 w-48 text-xs text-gray-400">
-                            2 . Politics . Trending
-                        </p>
-                        <h2 class="font-bold ml-2 px-4 text-gray-900 w-48">
-                            #HI-Fashion
-                        </h2>
-                        <p class="px-4 ml-2 mb-3 w-48 text-xs text-gray-400">
-                            8,464 Tweets
-                        </p>
-                    </div>
-                    <div class="flex-1 px-4 py-2 m-2">
-                        <a
-                            href=""
-                            class="float-right hover:bg-blue-100 hover:text-blue-400 rounded-full text-2xl text-gray-400"
-                        >
-                            <svg
-                                class="m-2 h-5 w-5"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <hr class=""/>
-
-                <!--third trending tweet-->
-
-                <div class="flex">
-                    <div class="flex-1">
-                        <p class="px-4 ml-2 mt-3 w-48 text-xs text-gray-400">
-                            3 . Rock . Trending
-                        </p>
-                        <h2 class="font-bold ml-2 px-4 text-gray-900 w-48">
-                            #Ferrari
-                        </h2>
-                        <p class="px-4 ml-2 mb-3 w-48 text-xs text-gray-400">
-                            5,586 Tweets
-                        </p>
-                    </div>
-                    <div class="flex-1 px-4 py-2 m-2">
-                        <a
-                            href=""
-                            class="float-right hover:bg-blue-100 hover:text-blue-400 rounded-full text-2xl text-gray-400"
-                        >
-                            <svg
-                                class="m-2 h-5 w-5"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <hr class=""/>
-
-                <!--forth trending tweet-->
-
-                <div class="flex">
-                    <div class="flex-1">
-                        <p class="px-4 ml-2 mt-3 w-48 text-xs text-gray-400">
-                            4 . Auto Racing . Trending
-                        </p>
-                        <h2 class="font-bold ml-2 px-4 text-gray-900 w-48">
-                            #vettel
-                        </h2>
-                        <p class="px-4 ml-2 mb-3 w-48 text-xs text-gray-400">
-                            9,416 Tweets
-                        </p>
-                    </div>
-                    <div class="flex-1 px-4 py-2 m-2">
-                        <a
-                            href=""
-                            class="float-right hover:bg-blue-100 hover:text-blue-400 rounded-full text-2xl text-gray-400"
-                        >
-                            <svg
-                                class="m-2 h-5 w-5"
-                                fill="none"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                            >
-                                <path d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <hr class=""/>
-
-                <!--show more-->
-
-                <div class="flex">
-                    <div class="flex-1 p-4">
-                        <h2 class="px-4 ml-2 w-48 font-bold text-blue-400">
-                            Show more
-                        </h2>
-                    </div>
-                </div>
-            </div>
-
-            <!--third-people suggetion to follow section-->
 
             <div class="bg-gray-100 m-4 overflow-hidden rounded-lg shadow-lg">
                 <div class="flex">
@@ -325,16 +135,9 @@
             </div>
 
             <div class="flow-root inline m-6">
-                <div class="flex-1">
-                    <a href="#">
-                        <p class="text-sm leading-6 font-medium text-gray-500">
-                            Terms Privacy Policy Cookies Imprint Ads info
-                        </p>
-                    </a>
-                </div>
                 <div class="flex-2">
                     <p class="text-sm leading-6 font-medium text-gray-600">
-                        © 2020 Twitter, Inc.
+                        © {{ date('Y') }} {{ config('app.name') }}
                     </p>
                 </div>
             </div>
