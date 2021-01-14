@@ -6,52 +6,56 @@
             <h1>Login</h1>
         </div>
 
-        <div class="mb-2">
-            <label
-                class="block font-bold mb-2 text-grey-darker text-sm"
-                for="username"
-            >
-                <input
-                    class="appearance-none border capitalize focus:outline-none focus:placeholder-blue-400 focus:ring-2 focus:ring-blue-400 focus:text-blue-400 h-12 px-3 py-2 rounded shadow text-xs w-full"
-                    id="username"
-                    type="text"
-                    placeholder="phone,email or username"
-                />
-            </label>
-        </div>
-        <div class="mb-2">
-            <label
-                class="block text-grey-darker text-sm font-bold mb-2"
-                for="password"
-            >
-                <input
-                    class="appearance-none border capitalize focus:outline-none focus:placeholder-blue-400 focus:ring-2 focus:ring-blue-400 focus:text-blue-400 h-12 px-3 py-2 rounded shadow text-xs w-full"
-                    id="password"
-                    type="password"
-                    placeholder="password"
-                />
-            </label>
-        </div>
-        <div class="items-center justify-between">
-            <button
-                class="capitalize bg-blue bg-blue-300 font-bold hover:bg-blue-400 hover:bg-blue-dark mb-5 px-4 py-2 rounded-full text-white w-full"
-                type="button"
-            >
-                log in
-            </button>
-            <div class="flex justify-center space-x-4">
-                <a
-                    class="align-baseline border-b border-transparent capitalize font-bold hover:border-blue-400 inline-block text-blue text-blue-400 text-sm"
-                    href="#"
+        <form action="{{ route('register') }}" method="post">
+            @csrf
+            <div class="mb-2">
+                <label
+                    class="block font-bold mb-2 text-grey-darker text-sm"
+                    for="identifier"
                 >
-                    Forgot Password?
-                </a>
-                <a
-                    class="align-baseline border-b border-transparent capitalize font-bold hover:border-blue-400 inline-block text-blue text-blue-400 text-sm"
-                    href="/signup.html"
-                >sign up for twitter</a
-                >
+                    <input
+                        class="appearance-none border capitalize focus:outline-none focus:placeholder-blue-400 focus:ring-2 focus:ring-blue-400 focus:text-blue-400 h-12 px-3 py-2 rounded shadow text-xs w-full"
+                        id="identifier"
+                        name="identifier"
+                        type="text"
+                        placeholder="Phone, Email or Username"
+                    />
+                </label>
             </div>
-        </div>
+
+            <div class="mb-2">
+                <label
+                    class="block text-grey-darker text-sm font-bold mb-2"
+                    for="password"
+                >
+                    <input
+                        class="appearance-none border capitalize focus:outline-none focus:placeholder-blue-400 focus:ring-2 focus:ring-blue-400 focus:text-blue-400 h-12 px-3 py-2 rounded shadow text-xs w-full"
+                        id="password"
+                        name="password"
+                        type="password"
+                        placeholder="password"
+                    />
+                </label>
+            </div>
+
+            <div class="items-center justify-between">
+                <button
+                    class="capitalize bg-blue bg-blue-300 font-bold hover:bg-blue-400 hover:bg-blue-dark mb-5 px-4 py-2 rounded-full text-white w-full"
+                    type="submit">
+                    Login
+                </button>
+
+                <div class="flex justify-center space-x-4">
+                    <a href="#"
+                       class="align-baseline border-b border-transparent capitalize font-bold hover:border-blue-400 inline-block text-blue text-blue-400 text-sm">
+                        Forgot Password?
+                    </a>
+
+                    <a href="{{ route('register') }}"
+                       class="align-baseline border-b border-transparent capitalize font-bold hover:border-blue-400 inline-block text-blue text-blue-400 text-sm">
+                        Register
+                    </a>
+                </div>
+            </div>
     </div>
 @stop
