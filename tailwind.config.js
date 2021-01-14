@@ -9,4 +9,9 @@ module.exports = {
     },
     variants: {},
     plugins: [],
+    purge: [
+        './resources/**/*.blade.php',
+        './resources/**/*.js',
+        './resources/**/*.vue',
+    ],
 };
