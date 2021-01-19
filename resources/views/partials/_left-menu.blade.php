@@ -125,19 +125,19 @@
                         </div>
                         <div class="ml-3">
                             <p class="font-medium leading-6 text-base text-gray-900">
-                                Rafiqul Islam
+                                {{ auth()->user()->full_name }}
                             </p>
                             <p
                                 class="duration-150 ease-in-out font-medium group-hover:text-gray-300 leading-5 text-gray-400 text-sm transition"
                             >
-                                @meXuvo
+                                {{ auth()->user()->email }}
                             </p>
                         </div>
                     </div>
                 </a>
             </div>
             <div>
-                <a href="/login.html">
+                <a href="{{ route('logout') }}">
                     <button
                         class="bg-blue-400 focus:outline-none font-medium hover:bg-blue-600 mt-5 px-4 py-2 rounded-full text-white w-48"
                     >

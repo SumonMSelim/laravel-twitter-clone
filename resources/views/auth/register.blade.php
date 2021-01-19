@@ -6,6 +6,8 @@
             <h1>Register</h1>
         </div>
 
+        @include('partials._notification')
+
         <form action="{{ route('register') }}" method="post">
             @csrf
             <div class="mb-2">
@@ -44,7 +46,7 @@
                     for="email"
                 >
                     <input
-                        class="appearance-none border capitalize focus:outline-none focus:placeholder-blue-400 focus:ring-2 focus:ring-blue-400 focus:text-blue-400 h-12 px-3 py-2 rounded shadow text-xs w-full"
+                        class="appearance-none border focus:outline-none focus:placeholder-blue-400 focus:ring-2 focus:ring-blue-400 focus:text-blue-400 h-12 px-3 py-2 rounded shadow text-xs w-full"
                         id="email"
                         name="email"
                         type="email"
