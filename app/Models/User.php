@@ -5,6 +5,7 @@ namespace App\Models;
 use App\Notifications\VerifyEmail;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Log;
@@ -68,5 +69,22 @@ class User extends Authenticatable implements HasMedia, MustVerifyEmail
     public function getFullNameAttribute(): string
     {
         return $this->first_name.' '.$this->last_name;
+    }
+
+    public function getFormattedDateOfBirthAttribute(): string
+    {
+        return $this->date_of_birth ?
+            sprintf('%s %s', __('twitter.born'), $this->date_of_birth->format('F d, Y')) :
+            __('twitter.birthday_message');
+    }
+
+    public function getFormattedJoinedDateAttribute(): string
+    {
+        return sprintf('%s %s', __('twitter.joined'), $this->created_at->format('F d, Y'));
+    }
+
+    public function tweets(): HasMany
+    {
+        return $this->hasMany(Tweet::class);
     }
 }

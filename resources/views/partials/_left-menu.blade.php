@@ -83,7 +83,7 @@
                 </a>
 
                 <a
-                    href="/profile.html"
+                    href="{{ route('profile') }}"
                     class="flex font-semibold group hover:bg-blue-100 hover:bg-opacity-80 hover:text-blue-500 items-center leading-6 px-2.5 py-2 rounded-full text-base text-gray-900"
                 >
                     <svg

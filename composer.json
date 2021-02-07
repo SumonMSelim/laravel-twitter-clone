@@ -62,6 +62,6 @@
             "@php artisan key:generate --ansi"
         ],
         "ide-generate": "php artisan ide-helper:generate && php artisan ide-helper:models && php artisan ide-helper:meta",
-        "fix-styles": "php-cs-fixer fix"
+        "cs-fix": "./vendor/bin/php-cs-fixer fix"
     }
 }
