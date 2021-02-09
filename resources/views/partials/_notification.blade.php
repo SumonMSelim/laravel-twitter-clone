@@ -1,6 +1,6 @@
 @foreach ($errors->all() as $error)
     <div
-        class="flex justify-center items-center m-1 font-medium py-1 px-2 bg-white rounded-md text-red-700 bg-red-100 border border-red-300 ">
+        class="flex justify-center items-center m-1 py-1 px-2 bg-white rounded-md text-red-700 bg-red-100 border border-red-300 ">
 
         <div slot="avatar">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24"
@@ -12,7 +12,7 @@
             </svg>
         </div>
 
-        <div class="text-xl font-normal max-w-full flex-initial">
+        <div class="font-normal max-w-full flex-initial">
             {{ $error }}
         </div>
     </div>
@@ -20,9 +20,9 @@
 
 @if(session()->has('type') && session('type') === 'success')
     <div
-        class="flex justify-center items-center m-1 font-medium py-1 px-2 bg-white rounded-md text-green-700 bg-green-100 border border-green-300">
+        class="flex justify-center items-center m-1 py-1 px-2 bg-white rounded-md text-green-700 bg-green-100 border border-green-300">
 
-        <div class="text-xl font-normal max-w-full flex-initial">
+        <div class="font-normal max-w-full flex-initial">
             {{ session('message') }}
         </div>
     </div>
@@ -30,7 +30,7 @@
 
 @if(session()->has('type') && session('type') === 'error')
     <div
-        class="flex justify-center items-center m-1 font-medium py-1 px-2 bg-white rounded-md text-red-700 bg-red-100 border border-red-300 ">
+        class="flex justify-center items-center m-1 py-1 px-2 bg-white rounded-md text-red-700 bg-red-100 border border-red-300 ">
 
         <div slot="avatar">
             <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24"
@@ -42,7 +42,7 @@
             </svg>
         </div>
 
-        <div class="text-xl font-normal max-w-full flex-initial">
+        <div class="font-normal max-w-full flex-initial">
             {{ session('message') }}
         </div>
     </div>

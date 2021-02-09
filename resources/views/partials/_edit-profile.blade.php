@@ -82,7 +82,7 @@
                     </div>
 
                     <div class="mt-5">
-                        <form action="" method="post">
+                        <form action="{{ route('profile') }}" method="post">
                             @csrf
 
                             <div class="px-3">
