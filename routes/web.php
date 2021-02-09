@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'showHome'])->name('home');
 
+Route::get('/lang/{locale}', [HomeController::class, 'setLocale'])->name('locale');
+
 Route::get('/register', [AuthController::class, 'showRegistrationForm'])->name('register');
 Route::post('/register', [AuthController::class, 'processRegistration']);
 

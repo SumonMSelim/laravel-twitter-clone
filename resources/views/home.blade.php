@@ -6,7 +6,7 @@
             <div class="flex">
                 <div class="flex-1 m-2">
                     <h2 class="font-semibold px-4 py-2 text-gray-900 text-xl">
-                        Home
+                        {{ __('twitter.home') }}
                     </h2>
                 </div>
             </div>

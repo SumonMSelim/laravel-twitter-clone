@@ -3,7 +3,7 @@
 @section('content')
     <div class="bg-white flex flex-col mb-4 pb-8 pt-6 px-8 rounded w-2/5">
         <div class="capitalize flex font-bold justify-center mb-5 text-2xl">
-            <h1>Register</h1>
+            <h1>{{ __('twitter.register') }}</h1>
         </div>
 
         @include('partials._notification')
@@ -105,7 +105,7 @@
                     class="bg-blue bg-blue-300 font-bold hover:bg-blue-400 hover:bg-blue-dark mb-5 px-4 py-2 rounded-full text-white w-full"
                     type="submit"
                 >
-                    Register
+                    {{ __('twitter.register') }}
                 </button>
             </div>
         </form>

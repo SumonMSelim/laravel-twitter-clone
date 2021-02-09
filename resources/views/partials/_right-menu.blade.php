@@ -139,6 +139,15 @@
                     <p class="text-sm leading-6 font-medium text-gray-600">
                         © {{ date('Y') }} {{ config('app.name') }}
                     </p>
+
+
+                    <a href="{{ route('locale', 'en') }}"
+                       class="@if(app()->getLocale() === 'en')) text-grey-400 @else text-blue-400 @endif"
+                    >English</a>
+                    |
+                    <a href="{{ route('locale', 'bn') }}"
+                       class="@if(app()->getLocale() === 'bn')) text-grey-400 @else text-blue-400 @endif"
+                    >বাংলা</a>
                 </div>
             </div>
         </div>
