@@ -19,7 +19,7 @@ class SettingsService
 
         try {
             $user->update([
-                $attribute => $value
+                $attribute => $value,
             ]);
         } catch (Exception $exception) {
             throw new Exception(sprintf('%s could not be updated.', ucfirst($attribute)));

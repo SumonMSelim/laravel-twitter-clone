@@ -14,7 +14,7 @@ class HomeController extends Controller
     public function setLocale(string $locale): RedirectResponse
     {
         $availableLocales = [
-            'en', 'bn'
+            'en', 'bn',
         ];
 
         $locale = in_array($locale, $availableLocales) ? $locale : 'en';

@@ -14,7 +14,7 @@ class UpdatePhoneNumberRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'phone_number' => 'required|min:6|unique:users,phone_number,'.$this->user()->id
+            'phone_number' => 'required|min:6|unique:users,phone_number,'.$this->user()->id,
         ];
     }
 }

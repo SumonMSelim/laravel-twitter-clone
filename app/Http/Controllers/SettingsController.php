@@ -70,4 +70,3 @@ class SettingsController extends Controller
         return redirect()->back();
     }
 }
-

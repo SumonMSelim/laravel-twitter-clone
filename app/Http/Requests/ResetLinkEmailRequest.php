@@ -4,17 +4,17 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class UpdateUsernameRequest extends FormRequest
+class ResetLinkEmailRequest extends FormRequest
 {
     public function authorize(): bool
     {
-        return auth()->check();
+        return auth()->guest();
     }
 
     public function rules(): array
     {
         return [
-            'username' => 'required|min:4|unique:users,username,'.$this->user()->id,
+            'email' => 'required|email',
         ];
     }
 }
