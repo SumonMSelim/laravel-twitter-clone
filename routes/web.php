@@ -39,4 +39,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::post('/settings/username', [SettingsController::class, 'updateUsername'])->name('settings.username');
     Route::post('/settings/email', [SettingsController::class, 'updateEmail'])->name('settings.email');
     Route::post('/settings/phone', [SettingsController::class, 'updatePhoneNumber'])->name('settings.phone');
+
+    Route::get('/settings/email/{token}', [SettingsController::class, 'changeEmail'])->name('setting.email.change');
 });
